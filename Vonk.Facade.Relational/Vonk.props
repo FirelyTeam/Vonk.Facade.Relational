@@ -1,0 +1,27 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Solution-wide properties for NuGet packaging -->
+  <PropertyGroup>
+    <Authors>Christiaan Knaap and contributors</Authors>
+    <Company>Firely (https://fire.ly)</Company>
+    <Copyright>Copyright 2015-2021 Firely.  Contains materials (C) HL7 International</Copyright>
+    <PackageProjectUrl>https://fire.ly/products/server</PackageProjectUrl>
+    <PackageReleaseNotes>See https://docs.fire.ly/vonk/releasenotes/releasenotes.html</PackageReleaseNotes>
+    <PackageLicenseUrl>https://simplifier.net/vonk/download</PackageLicenseUrl>
+    <VersionPrefix>4.5.0</VersionPrefix>
+    <VersionSuffix>alpha</VersionSuffix>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <NetStandardImplicitPackageVersion>2.0.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ServerProductPage>https://fire.ly/products/firely-server</ServerProductPage>
+    <FacadeProductPage>https://fire.ly/products/fhir-facade</FacadeProductPage>
+    <ServerDocumentation>https://docs.fire.ly/firelyserver/index.html</ServerDocumentation>
+  </PropertyGroup>
+
+</Project>
