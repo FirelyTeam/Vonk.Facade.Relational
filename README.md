@@ -1,6 +1,6 @@
-|Develop|Main|
-|---|---|
-||[![Build Status](https://dev.azure.com/firely/vonk%20private%20plugins/_apis/build/status/FirelyTeam.Vonk.Facade.Relational?repoName=FirelyTeam%2FVonk.Facade.Relational&branchName=main)](https://dev.azure.com/firely/vonk%20private%20plugins/_build/latest?definitionId=100&repoName=FirelyTeam%2FVonk.Facade.Relational&branchName=main)|
+|Build status|
+|---|
+|[![Build Status](https://dev.azure.com/firely/vonk%20private%20plugins/_apis/build/status/FirelyTeam.Vonk.Facade.Relational?repoName=FirelyTeam%2FVonk.Facade.Relational&branchName=main)](https://dev.azure.com/firely/vonk%20private%20plugins/_build/latest?definitionId=100&repoName=FirelyTeam%2FVonk.Facade.Relational&branchName=main)|
 
 # Vonk.Facade.Relational
 Vonk.Facade.Relational provides base classes to ease the implementation of a Facade on top of an existing relational database.
