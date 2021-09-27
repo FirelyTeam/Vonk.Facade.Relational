@@ -15,3 +15,5 @@ The following configuration has been succesfully tested for building and running
 * .Net Core - Version 3.1
 
 ## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
