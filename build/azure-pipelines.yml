@@ -1,0 +1,22 @@
+# Repo: FirelyTeam/Vonk.Facade.Relational
+# File: build/azure-pipelines.yml
+name: $(SourceBranchName)-$(Date:yyyyMMdd)$(Rev:-r)
+
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: FirelyTeam/azure-pipeline-templates
+      endpoint: FirelyTeam 
+
+variables:
+  buildConfiguration: 'Release'
+
+jobs:
+- template: build.yml@templates  # Template reference
+  parameters:
+    restoreDependencies: true
+    nuGetServiceConnections: VonkPackageCredentials
+    nuGetSources: --source https://www.myget.org/F/vonk/api/v3/index.json 
+    pool:
+         vmImage: windows-latest

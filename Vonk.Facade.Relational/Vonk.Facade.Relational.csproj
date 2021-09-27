@@ -1,7 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <Import Project="Vonk.props" />
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyTitle>Firely FHIR Facade base for relational datastores</AssemblyTitle>
+    <AssemblyName>Vonk.Facade.Relational</AssemblyName>
+    <PackageId>Vonk.Facade.Relational</PackageId>
+    <Title>Firely FHIR Facade base for relational datastores.</Title>
+    <Description>
+Firely Server (formerly: Vonk) supports building a Facade or a Plugin, see the product pages for Firely Server ($(ServerProductPage) and FHIR Facade ($(FacadeProductPage)).
+$(PackageId) provides base classes to ease the implementation of a Facade on top of an existing relational database.
+You need Firely Server to use $(PackageId). Go to the product page to download a copy, including an evaluation license.
+Visit the documentation pages ($(ServerDocumentation)) for documentation and examples on how to build a Facade.
+    </Description>
+    <PackageTags>HL7 FHIR Firely Server Vonk Facade</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Vonk.Core" Version="4.4.0" />
+  </ItemGroup>
 
 </Project>
