@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vonk.Facade.Relational", "Vonk.Facade.Relational\Vonk.Facade.Relational.csproj", "{83A54BC8-CB7C-4AA6-B830-DAC41F1F3183}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A54BC8-CB7C-4AA6-B830-DAC41F1F3183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A54BC8-CB7C-4AA6-B830-DAC41F1F3183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A54BC8-CB7C-4AA6-B830-DAC41F1F3183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A54BC8-CB7C-4AA6-B830-DAC41F1F3183}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EBDB5DA3-137A-460A-9FA0-62069834988F}
+	EndGlobalSection
+EndGlobal
