@@ -314,6 +314,17 @@ namespace Vonk.Facade.Relational
         {
             throw new NotSupportedException();
         }
+        
+        /// <summary>
+        /// Override this method to create <see cref="Q"/> queries for all the parameter types for which you want to support the missing modifier.
+        /// </summary>
+        /// <param name="parameterName"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public virtual Q AddValueFilter(string parameterName, MissingValue value)
+        {
+            throw new NotSupportedException();
+        }
 
         /// <summary>
         /// Override this method to create <see cref="Q"/> queries for parameters for which no SearchParameter is known to Vonk, and hence no SearchParameterType.
