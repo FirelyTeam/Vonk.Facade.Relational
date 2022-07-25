@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Vonk.Core.Context;
 using Vonk.Core.Repository;
+using Vonk.Core.Repository.ResultShaping;
 using Vonk.Core.Support;
 using static Vonk.Core.Context.VonkOutcome;
 
@@ -26,6 +27,16 @@ namespace Vonk.Facade.Relational
                 throw new NotSupportedException("Searching across multiple types is not supported.");
 
             var type = types.First();
+
+            // Argument "_total" is meant to be handled in the implementation of ISearchRepository of a facade,
+            // however since "_total=accurate" was added as a default shape argument and it is always the case when we perform a search,
+            // so we simply handle it here for a facade implementation.
+            // For arguments "_total=none" and "_total=estimate", they still need to be handled in a facade.
+            var totalArgument = arguments.GetArgument(ArgumentNames.total);
+            if (totalArgument != null && TotalOptions.accurate.ToString().Equals(totalArgument.ArgumentValue))
+            {
+                totalArgument.Handled();
+            }
 
             try
             {
