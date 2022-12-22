@@ -26,7 +26,7 @@ Visit the documentation pages ($(ServerDocumentation)) for documentation and exa
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Vonk.Core" Version="4.9.0" />
+    <PackageReference Include="Vonk.Core" Version="$(VonkVersion)" />
   </ItemGroup>
 
 </Project>
