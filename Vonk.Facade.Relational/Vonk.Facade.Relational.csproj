@@ -3,10 +3,6 @@
   <Import Project="Vonk.props" />
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <AssemblyTitle>Firely FHIR Facade base for relational datastores</AssemblyTitle>
     <AssemblyName>Vonk.Facade.Relational</AssemblyName>
     <PackageId>Vonk.Facade.Relational</PackageId>
@@ -29,4 +25,8 @@ Visit the documentation pages ($(ServerDocumentation)) for documentation and exa
     <PackageReference Include="Vonk.Core" Version="$(VonkVersion)" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+	
 </Project>
