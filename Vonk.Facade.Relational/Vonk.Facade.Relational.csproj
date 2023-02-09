@@ -1,10 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="Vonk.props" />
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+  <Import Project="..\Vonk.props" />
 
   <PropertyGroup>
     <AssemblyTitle>Firely FHIR Facade base for relational datastores</AssemblyTitle>
@@ -26,7 +22,11 @@ Visit the documentation pages ($(ServerDocumentation)) for documentation and exa
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Vonk.Core" Version="$(VonkVersion)" />
+    <ProjectReference Include="..\Vonk.Core\Vonk.Core.csproj" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+	
 </Project>
