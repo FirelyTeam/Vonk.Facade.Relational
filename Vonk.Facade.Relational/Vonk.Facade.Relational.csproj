@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\Vonk.props" />
+  <Import Project="Vonk.props" />
 
   <PropertyGroup>
     <AssemblyTitle>Firely FHIR Facade base for relational datastores</AssemblyTitle>
