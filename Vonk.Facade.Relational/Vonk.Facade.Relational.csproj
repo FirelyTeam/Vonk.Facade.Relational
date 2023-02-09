@@ -22,7 +22,7 @@ Visit the documentation pages ($(ServerDocumentation)) for documentation and exa
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Vonk.Core\Vonk.Core.csproj" />
+    <PackageReference Include="Vonk.Core" Version="$(VonkVersion)" />
   </ItemGroup>
 
   <PropertyGroup>
