@@ -18,6 +18,6 @@ jobs:
     restoreDependencies: true
     nuGetServiceConnections: VonkPackageCredentials, GitHub_FirelyTeams_NuGetFeed
     nuGetSources: --source https://nuget.pkg.github.com/FirelyTeam/index.json
-    dotNetCoreVersion: '6.0.x'
+    dotNetCoreVersion: '8.0.x'
     pool:
          vmImage: windows-latest
