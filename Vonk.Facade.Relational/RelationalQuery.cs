@@ -12,7 +12,7 @@ namespace Vonk.Facade.Relational
 {
     public class RelationalSortShape<E> : SortShape
     {
-        public RelationalSortShape(SortShape originalSort, Func<IQueryable<E>, IQueryable<E>> sortFunction) : base(originalSort.ParameterName, originalSort.ParameterType, originalSort.Direction, originalSort.Priority)
+        public RelationalSortShape(SortShape originalSort, Func<IQueryable<E>, IQueryable<E>> sortFunction) : base(originalSort.ParameterCode, originalSort.ParameterType, originalSort.Direction, originalSort.Priority)
         {
             Sort = sortFunction;
         }
