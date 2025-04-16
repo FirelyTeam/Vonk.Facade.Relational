@@ -10,10 +10,10 @@ For more details about developing a Firely Server facade, please consult [Firely
 
 ### Build dependencies
 The following configuration has been succesfully tested for building and running the project:
-* Firely Server (Vonk) - Version 4.0.0
-* Visual Studio for Mac - Version 8.x.x
-* Visual Studio for Windows - Version 16.x.x
-* .Net Core - Version 3.1
+* Firely Server (Vonk) - Version 6.x.x
+* Visual Studio for Mac - Version 8.x.x and newer
+* Visual Studio for Windows - Version 16.x.x and newer
+* .Net 8.0
 
 ## License
 

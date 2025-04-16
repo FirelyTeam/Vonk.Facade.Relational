@@ -4,18 +4,18 @@
   <PropertyGroup>
     <Authors>Christiaan Knaap and contributors</Authors>
     <Company>Firely (https://fire.ly)</Company>
-    <Copyright>Copyright 2015-2021 Firely.  Contains materials (C) HL7 International</Copyright>
+    <Copyright>Copyright 2015-2025 Firely.  Contains materials (C) HL7 International</Copyright>
     <PackageProjectUrl>https://fire.ly/products/server</PackageProjectUrl>
     <PackageReleaseNotes>See https://docs.fire.ly/vonk/releasenotes/releasenotes.html</PackageReleaseNotes>
-    <PackageLicenseUrl>https://simplifier.net/vonk/download</PackageLicenseUrl>
-    <VersionPrefix>5.0.0</VersionPrefix>
-    <VersionSuffix>alpha</VersionSuffix>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <VersionPrefix>6.0.0</VersionPrefix>
+    <VersionSuffix></VersionSuffix>
     <TargetFramework>net8.0</TargetFramework>
     <NetStandardImplicitPackageVersion>2.0.0</NetStandardImplicitPackageVersion>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>12.0</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -25,7 +25,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VonkVersion>5.*-*</VonkVersion>
+    <VonkVersion>6.*-*</VonkVersion>
   </PropertyGroup>
 
 </Project>
