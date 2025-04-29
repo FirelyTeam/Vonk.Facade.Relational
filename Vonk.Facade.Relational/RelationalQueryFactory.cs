@@ -234,7 +234,10 @@ public abstract class RelationalQueryFactory<E, Q> : IRepoQueryFactory<Q> where 
                 // so no new predicate is needed.
                 return null;
             }
-        } 
+        }
+
+        if (value.ResourceTypes.Count() == 0)
+            return null;
 
         throw new NotSupportedException($"_type:not={value.ResourceTypes?.CommaSeparated(true)} is not supported.");
     }
