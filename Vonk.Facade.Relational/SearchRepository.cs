@@ -29,11 +29,11 @@ public abstract class SearchRepository : ISearchRepository
         var type = types.First();
 
         // Argument "_total" is meant to be handled in the implementation of ISearchRepository of a facade,
-        // however since "_total=accurate" was added as a default shape argument and it is always the case when we perform a search,
+        // however since "_total=none" was added as a default shape argument and it is always the case when we perform a search,
         // so we simply handle it here for a facade implementation.
-        // For arguments "_total=none" and "_total=estimate", they still need to be handled in a facade.
+        // For arguments "_total=accurate" and "_total=estimate", they still need to be handled in a facade.
         var totalArgument = arguments.GetArgument(ArgumentNames.total);
-        if (totalArgument != null && TotalOptions.accurate.ToString().Equals(totalArgument.ArgumentValue))
+        if (totalArgument != null && TotalOptions.none.ToString().Equals(totalArgument.ArgumentValue))
         {
             totalArgument.Handled();
         }
